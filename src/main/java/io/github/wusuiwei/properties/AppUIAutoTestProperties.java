@@ -1,4 +1,4 @@
-package com.wusuiwei.properties;
+package io.github.wusuiwei.properties;
 
 public class AppUIAutoTestProperties {
 }

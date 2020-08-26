@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.wusuiwei.config.AutoTestAutoConfiguration
+  io.github.wusuiwei.config.AutoTestAutoConfiguration

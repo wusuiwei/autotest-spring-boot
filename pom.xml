@@ -6,24 +6,61 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wusuiwei</groupId>
     <artifactId>autotest-spring-boot-starter</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>baidu-webui-autotest</module>
+    </modules>
 
-    <properties>
-        <spring.boot.version>2.3.1.RELEASE</spring.boot.version>
-    </properties>
-
-    <parent>
-        <artifactId>spring-boot-starter</artifactId>
-        <groupId>org.springframework.boot</groupId>
-        <version>2.3.1.RELEASE</version>
-    </parent>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.1.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+            <scope>compile</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!--公共依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--webui 相关依赖-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+        </dependency>
+
+
+        <!--appui 相关依赖-->
+
+
+        <!--restapi 相关依赖-->
     </dependencies>
 </project>
