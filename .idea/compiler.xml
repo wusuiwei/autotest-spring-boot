@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="autotest-spring-boot-starter" />
+        <module name="autotest-spring-boot-autoconfigure" />
         <module name="baidu-webui-autotest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="autotest-spring-boot" target="1.5" />
+      <module name="autotest-spring-boot-autoconfigure" target="1.5" />
       <module name="autotest-spring-boot-starter" target="1.5" />
       <module name="baidu-webui-autotest" target="1.5" />
     </bytecodeTargetLevel>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/autotest-spring-boot-starter.iml" filepath="$PROJECT_DIR$/.idea/autotest-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest-spring-boot.iml" filepath="$PROJECT_DIR$/autotest-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest-spring-boot-autoconfigure/autotest-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/autotest-spring-boot-autoconfigure/autotest-spring-boot-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest-spring-boot-starter/autotest-spring-boot-starter.iml" filepath="$PROJECT_DIR$/autotest-spring-boot-starter/autotest-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/baidu-webui-autotest/baidu-webui-autotest.iml" filepath="$PROJECT_DIR$/baidu-webui-autotest/baidu-webui-autotest.iml" />
     </modules>
   </component>
