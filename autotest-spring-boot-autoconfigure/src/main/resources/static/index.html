@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <title>AutoTester</title>
+        <style>
+            .userMenu {
+                float: left;
+                width: 10%;
+                height: 20%;
+                margin-top: 20px;
+            }
+            
+            #content {
+                float: left;
+                width: 90%;
+                background-color: #8f949e;
+            }
+        </style>
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+ 
+    </head>
+ 
+    <body>
+        <div class="userWrap">
+            <ul class="userMenu">
+                <li class="current" data-id="case">用例管理</li>
+                <li data-id="console">日志信息</li>
+                <li data-id="excutor">用例执行器</li>
+                <li data-id="info">消息中心</li>
+            </ul>
+            <div id="content"></div>
+        </div>
+    </body>
+    <script>
+        $(function() {
+            $(".userMenu").on("click", "li", function() {
+                var sId = $(this).data("id"); //获取data-id的值
+                window.location.hash = sId; //设置锚点
+                loadInner(sId);
+            });
+ 
+            function loadInner(sId) {
+                var sId = window.location.hash;
+                var pathn, i;
+                switch(sId) {
+                    case "#case":
+                        pathn = "case.html";
+                        i = 0;
+                        break;　　　　　　　
+                    case "#console":
+                        pathn = "console.html";
+                        i = 1;
+                        break;
+                    case "#excutor":
+                        pathn = "excutor.html";
+                        i = 2;
+                        break;
+                    case "#info":
+                        pathn = "user_info.html";
+                        i = 3;
+                        break;　　　　　　
+                    default:
+                        pathn = "case.html";
+                        i = 0;
+                        break;
+                }
+                $("#content").load(pathn); //加载相对应的内容
+                $(".userMenu li").eq(i).addClass("current").siblings().removeClass("current"); //当前列表高亮
+            }
+            var sId = window.location.hash;
+            loadInner(sId);
+        });
+    </script>
+ 
+</html>
