@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "autotest.webui.base-url",
+      "description": "域名地址."
+    },
+    {
+      "name": "autotest.webui.driver.remote",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "description": "是否开启远程."
+    }
+  ],
+  "hints": [
+    {
+      "name": "autotest.webui.driver.chrome.platform-name",
+      "values": [
+        {
+          "value": "win10"
+        }
+      ]
+    }
+  ]
+}

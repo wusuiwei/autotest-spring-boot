@@ -1,5 +1,6 @@
 demo:
-  say-what: hello...
+  say-what: hello..
+
 autotest:
   webui:
-    name: fass
+    debug: false

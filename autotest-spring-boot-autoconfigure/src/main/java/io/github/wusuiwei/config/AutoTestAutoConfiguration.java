@@ -6,10 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@EnableConfigurationProperties({WebUIAutoTestProterties.class})
+@EnableConfigurationProperties({WebUIAutoTestProterties.class, WebUIAutoTestProterties.DriverProperties.class})
 @Import(MySelectImports.class)
 public class AutoTestAutoConfiguration {
-
 
 
 }
