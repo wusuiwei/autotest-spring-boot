@@ -1,5 +1,6 @@
-package io.github.wusuiwei.properties;
+package io.github.wusuiwei.selenium;
 
+import io.github.wusuiwei.properties.AutoTestProperties;
 import lombok.Data;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -9,9 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 @Data
-@ConfigurationProperties(prefix = "autotest.webui")
-public class WebUIAutoTestProterties {
-    private String baseUrl;
+@ConfigurationProperties(prefix = "autotest.selenium")
+public class SeleniumProterties extends AutoTestProperties {
     private DriverProperties driver;
 
     @Data

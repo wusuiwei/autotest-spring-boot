@@ -1,13 +1,12 @@
 package io.github.wusuiwei.config;
 
-import io.github.wusuiwei.properties.WebUIAutoTestProterties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+
+import io.github.wusuiwei.selenium.SeleniumAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@EnableConfigurationProperties({WebUIAutoTestProterties.class, WebUIAutoTestProterties.DriverProperties.class})
-@Import(MySelectImports.class)
+@Import({SeleniumAutoConfiguration.class,MySelectImports.class})
 public class AutoTestAutoConfiguration {
 
 

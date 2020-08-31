@@ -1,4 +1,4 @@
-package io.github.wusuiwei.base;
+package io.github.wusuiwei.selenium;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,10 +8,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class SeleniumBaseTests {
     public static ChromeDriver driver;
 
-    public BaseTest() {
+    public SeleniumBaseTests() {
         System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.NORMAL);

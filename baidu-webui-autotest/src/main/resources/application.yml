@@ -1,6 +1,5 @@
 demo:
   say-what: hello..
-
 autotest:
-  webui:
-    debug: false
+  selenium:
+    base-url: www.baidu.com
