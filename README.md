@@ -10,4 +10,15 @@
     <version>${autotest.version}</version>
 </dependency>
 ```
-
+# 项目开发计划
+ ## Web UI 自动化测试
+ 
+ ## APP UI 自动化测试
+ 
+ ## Rest API 自动化测试
+ 
+ ## 测试报告
+ 
+ ## 性能测试（暂不考虑）
+ 
+ 
