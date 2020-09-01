@@ -1,5 +1,5 @@
+logging:
+  level:
+    root: debug
 demo:
-  say-what: hello..
-autotest:
-  selenium:
-    base-url: www.baidu.com
+  say-what: hello..111

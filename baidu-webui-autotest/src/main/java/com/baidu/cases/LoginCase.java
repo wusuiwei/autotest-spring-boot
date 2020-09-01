@@ -18,7 +18,7 @@ public class LoginCase {
     //java -Dwebdriver.chrome.driver="C:\software\chrome-driver\chromedriver-84.0.4147.30.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub "http://172.20.137.58:4444/grid/register/"
 
     @Test
-    public void loginSuccess() {
+    public void baiduTest() {
         RemoteWebDriver driver = null;
         try {
 
@@ -40,7 +40,7 @@ public class LoginCase {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.close();
         }
     }
