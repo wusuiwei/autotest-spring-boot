@@ -14,7 +14,9 @@ logging:
   level:
     root: info
 demo:
-  say-what: hello..111
+  say-what: hello..111er.
 autotest:
   selenium:
-    is-remote: false
+    driver:
+      chrome:
+        platform-name: win10
