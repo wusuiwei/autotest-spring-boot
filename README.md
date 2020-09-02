@@ -14,6 +14,9 @@
  ## Web UI 自动化测试
  - 集成 selenium
  - 关键字驱动测试框架搭建
+   - 集成spring data jpa
+   - 表设计
+   - excel导入关键字测试用例
  
  ## APP UI 自动化测试
  - 集成 appium
