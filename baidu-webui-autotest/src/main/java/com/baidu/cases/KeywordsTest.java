@@ -1,13 +1,11 @@
 package com.baidu.cases;
 
-import io.github.wusuiwei.selenium.SeleniumActionKeywords;
+import io.github.wusuiwei.selenium.keywords.ActionKeywords;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
 public class KeywordsTest {
     @Test
     void test() {
-        SeleniumActionKeywords.openBrowser("chrome");
+        ActionKeywords.openBrowser("chrome");
     }
 }

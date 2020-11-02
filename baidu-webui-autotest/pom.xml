@@ -13,11 +13,14 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
+    <properties>
+        <autotest.version>1.0.0-SNAPSHOT</autotest.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>io.github.wusuiwei</groupId>
             <artifactId>autotest-spring-boot-starter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${autotest.version}</version>
         </dependency>
     </dependencies>
 

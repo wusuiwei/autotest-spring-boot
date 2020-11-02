@@ -1,4 +1,4 @@
-package io.github.wusuiwei.selenium;
+package io.github.wusuiwei.selenium.base;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumBaseTests {
+public class BaseTest {
     public WebDriver driver;
 
     @BeforeEach

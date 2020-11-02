@@ -6,5 +6,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Data
 @ConfigurationProperties("autotest")
 public class AutoTestProperties {
-    private String baseUrl;
+
 }

@@ -9,11 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/reporter")
 public class ReporterController {
 
-    @Value(value = "${demo.say-what}")
-    String re;
-
     @GetMapping("/")
     public String getReporter() {
-        return  re;
+        return  "hello";
     }
 }
